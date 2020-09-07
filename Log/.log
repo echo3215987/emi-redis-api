@@ -1,0 +1,4 @@
+2020-09-07 09:55:11,961 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-09-07 10:03:50,994 INFO _internal._log Line:113127.0.0.1 - - [07/Sep/2020 10:03:50] "[37mGET /emi/roundinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/ HTTP/1.1[0m" 200 -
+2020-09-07 10:03:51,181 INFO _internal._log Line:113127.0.0.1 - - [07/Sep/2020 10:03:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-09-07 10:04:03,958 INFO _internal._log Line:113127.0.0.1 - - [07/Sep/2020 10:04:03] "[37mGET /emi/cameraquality/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/ HTTP/1.1[0m" 200 -

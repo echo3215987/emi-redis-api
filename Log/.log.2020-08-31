@@ -1,0 +1,230 @@
+2020-08-31 09:52:33,966 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 09:53:23,138 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 09:53:23] "[33mGET /emi/round/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/ HTTP/1.1[0m" 404 -
+2020-08-31 09:53:23,261 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 09:53:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-08-31 09:55:50,937 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 09:55:50] "[32mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^ HTTP/1.1[0m" 308 -
+2020-08-31 09:55:54,962 ERROR app.log_exception Line:1891Exception on /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] µLªk³s½u¡A¦]¬°¥Ø¼Ð¹q¸£©Úµ´³s½u¡C
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Git/emi-redis-api/app/main.py", line 42, in saveOPInfo
+    r.hmset(line + station + 'op_info', request_data)
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\redis\client.py", line 3075, in hmset
+    return self.execute_command('HMSET', name, *items)
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. µLªk³s½u¡A¦]¬°¥Ø¼Ð¹q¸£©Úµ´³s½u¡C.
+2020-08-31 09:55:55,022 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 09:55:55] "[35m[1mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^/ HTTP/1.1[0m" 500 -
+2020-08-31 09:56:30,887 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 09:56:31,320 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 09:56:31] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 09:59:38,656 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 09:59:38] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/202009081000001/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:00:09,173 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:00:09] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/202009081000001/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:00:26,847 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:00:43,586 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:01:29,754 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:01:29,759 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:01:29] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/202009081000001/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:01:57,221 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:02:07,296 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:02:07,299 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:02:07] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/2020090810000f/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:02:23,676 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:02:23,679 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:02:23] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/2020090810000f/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:02:35,976 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:02:35,979 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:02:35] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:03:48,420 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:03:50,841 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:03:50,846 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:03:50] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:03:53,423 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:03:53,426 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:03:53] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:04:52,363 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:06:27,630 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:07:14,427 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:07:14] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:07:24,673 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:07:24] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/2020090810000f/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:07:37,195 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:07:37] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/2020090810000t/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:07:47,731 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:07:47] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/2020090810000t/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:10:05,775 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:10:13,280 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:10:13,283 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:10:13] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/2020090810000t/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:10:19,915 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:10:19] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:10:22,336 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:10:22] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/202009081000001/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:10:27,727 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:10:27] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/202009081000001/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:12:00,095 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:12:00,398 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:12:00,399 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:12:00] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/202009081000001/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:12:09,208 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:12:09] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:12:12,452 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:12:12,454 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:12:12] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000f/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:12:16,348 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:12:16,350 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:12:16] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/202009081000002/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:12:20,433 ERROR main.saveOPInfo Line:40ValueError: parameter error
+2020-08-31 10:12:20,436 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:12:20] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/2020090810000f/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:12:26,638 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:12:26] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908200000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:17:07,308 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:17:07,424 ERROR app.log_exception Line:1891Exception on /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908200000/52129108/¸·¬x­^/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Git/emi-redis-api/app/main.py", line 40, in saveOPInfo
+    datetime.datetime.strptime(instation_time, '%Y-%m-%d %H:%M:%S')
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '20200908200000' does not match format '%Y-%m-%d %H:%M:%S'
+2020-08-31 10:17:07,441 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:17:07] "[35m[1mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908200000/52129108/¸·¬x­^/ HTTP/1.1[0m" 500 -
+2020-08-31 10:18:34,715 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:18:34,860 ERROR main.saveOPInfo Line:57ValueError: date format error
+2020-08-31 10:18:34,862 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:18:34] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908200000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:19:14,077 ERROR main.saveOPInfo Line:57ValueError: date format error
+2020-08-31 10:19:14,079 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:19:14] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908200000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:19:57,626 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:20:05,393 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:20:05] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908200000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:21:06,854 ERROR main.saveOPInfo Line:57ValueError: date format error
+2020-08-31 10:21:06,860 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:21:06] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/202009082000001/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:21:15,893 ERROR main.saveOPInfo Line:57ValueError: date format error
+2020-08-31 10:21:15,895 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:21:15] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/2020090820000f/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:21:22,696 ERROR main.saveOPInfo Line:57ValueError: date format error
+2020-08-31 10:21:22,698 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:21:22] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908300000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:21:36,931 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:21:36] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:33:31,917 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:35:19,808 ERROR app.log_exception Line:1891Exception on /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: saveOPInfo() got an unexpected keyword argument 'instation_time'
+2020-08-31 10:35:19,814 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:35:19] "[35m[1mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 500 -
+2020-08-31 10:35:59,859 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:36:00,698 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:36:00] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:36:06,491 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:36:06] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230001/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:36:11,040 ERROR main.saveOPInfo Line:56ValueError: date format error
+2020-08-31 10:36:11,042 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:36:11] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/2020090823000f/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:36:17,344 ERROR main.saveOPInfo Line:56ValueError: date format error
+2020-08-31 10:36:17,346 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:36:17] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000f/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:36:21,348 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:36:21] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:46:54,432 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:46:54,874 ERROR app.log_exception Line:1891Exception on /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Git/emi-redis-api/app/main.py", line 47, in saveOPInfo
+    op_df.to_sql('op_info', con=engine, if_exists='append')
+NameError: name 'pd' is not defined
+2020-08-31 10:46:54,882 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:46:54] "[35m[1mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 500 -
+2020-08-31 10:46:58,525 ERROR app.log_exception Line:1891Exception on /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Git/emi-redis-api/app/main.py", line 47, in saveOPInfo
+    op_df.to_sql('op_info', con=engine, if_exists='append')
+NameError: name 'pd' is not defined
+2020-08-31 10:46:58,526 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:46:58] "[35m[1mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 500 -
+2020-08-31 10:47:33,913 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:47:36,634 ERROR main.saveOPInfo Line:60ValueError: date format error
+2020-08-31 10:47:36,636 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:47:36] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:47:56,463 ERROR main.saveOPInfo Line:60ValueError: date format error
+2020-08-31 10:47:56,464 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:47:56] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:49:49,790 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:50:30,895 ERROR main.saveOPInfo Line:60ValueError: date format error
+2020-08-31 10:50:30,897 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:50:30] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:51:16,512 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:51:33,879 ERROR app.log_exception Line:1891Exception on /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\pj17_\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/Git/emi-redis-api/app/main.py", line 47, in saveOPInfo
+    op_df = pd.DataFrame(request_data)
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\pandas\core\frame.py", line 411, in __init__
+    mgr = init_dict(data, index, columns, dtype=dtype)
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\pandas\core\internals\construction.py", line 257, in init_dict
+    return arrays_to_mgr(arrays, data_names, index, columns, dtype=dtype)
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\pandas\core\internals\construction.py", line 77, in arrays_to_mgr
+    index = extract_index(arrays)
+  File "C:\Users\pj17_\AppData\Roaming\Python\Python38\site-packages\pandas\core\internals\construction.py", line 358, in extract_index
+    raise ValueError("If using all scalar values, you must pass an index")
+ValueError: If using all scalar values, you must pass an index
+2020-08-31 10:51:33,906 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:51:33] "[35m[1mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 500 -
+2020-08-31 10:53:30,317 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 10:54:35,675 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:54:35] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908230000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 10:55:12,916 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 10:55:12] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908110000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 11:00:11,787 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 11:00:14,780 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 11:00:14] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908110000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 11:02:42,455 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 11:02:42] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908110000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 11:03:44,028 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-31 11:03:44,246 ERROR main.saveOPInfo Line:60ValueError: date format error
+2020-08-31 11:03:44,249 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 11:03:44] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/2020090811000f/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 11:03:52,950 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 11:03:52] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200911110000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
+2020-08-31 11:03:55,278 ERROR main.saveOPInfo Line:60ValueError: date format error
+2020-08-31 11:03:55,280 INFO _internal._log Line:113127.0.0.1 - - [31/Aug/2020 11:03:55] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200911110000f/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -

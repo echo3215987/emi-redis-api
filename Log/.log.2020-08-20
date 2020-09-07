@@ -1,0 +1,48 @@
+2020-08-20 10:26:08,617 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 10:26:09,868 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:26:09] "[37mGET /emi/roundinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/ HTTP/1.1[0m" 200 -
+2020-08-20 10:27:02,294 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:27:02] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 10:27:02,585 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:27:02] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 10:29:44,481 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 10:29:44,533 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:29:44] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 10:29:45,070 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:29:45] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 10:29:50,703 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:29:50] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 10:29:51,038 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:29:51] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 10:32:44,282 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 10:32:46,805 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:32:46] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 10:32:47,038 INFO main.saveOPInfo Line:42cc
+2020-08-20 10:32:47,049 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:32:47] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 10:34:02,918 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 10:34:07,762 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:34:07] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 10:34:07,996 INFO main.saveOPInfo Line:41cc
+2020-08-20 10:34:08,007 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:34:08] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 10:35:07,731 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 10:35:19,892 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:35:19] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 10:35:20,136 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:35:20] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 10:36:01,877 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 10:36:02,168 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:36:02] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 10:36:02,407 INFO main.saveOPInfo Line:41KeyError, parameter error
+2020-08-20 10:36:02,407 ERROR main.saveOPInfo Line:42KeyError, parameter error
+2020-08-20 10:36:02,408 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:36:02] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 10:54:41,372 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 10:55:52,929 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 10:55:53,597 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 10:55:53] "[37mGET /emi/roundinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/ HTTP/1.1[0m" 200 -
+2020-08-20 15:22:17,655 INFO server.__init__ Line:150Server initialized for threading.
+2020-08-20 15:22:28,529 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 15:28:25,190 INFO server.__init__ Line:150Server initialized for threading.
+2020-08-20 15:28:36,083 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 15:44:29,453 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 15:49:45,627 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 15:49:50,620 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 15:49:50] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 15:49:51,618 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 15:49:51] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 15:50:03,217 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 15:50:03] "[32mGET /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 15:50:03,528 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 15:50:03] "[31m[1mGET /emi/opinfo/ HTTP/1.1[0m" 400 -
+2020-08-20 15:50:23,655 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 15:50:23] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 15:50:24,043 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 15:50:24] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 16:10:01,872 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 16:10:02,029 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 16:10:02] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 16:10:02,512 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 16:10:02] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 16:12:27,323 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 16:12:27] "[32mPOST /emi/opinfo HTTP/1.1[0m" 308 -
+2020-08-20 16:12:27,657 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 16:12:27] "[37mPOST /emi/opinfo/ HTTP/1.1[0m" 200 -
+2020-08-20 16:20:38,488 INFO _internal._log Line:113 * Running on http://0.0.0.0:33000/ (Press CTRL+C to quit)
+2020-08-20 16:21:51,378 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 16:21:51] "[32mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^ HTTP/1.1[0m" 308 -
+2020-08-20 16:21:51,836 INFO _internal._log Line:113127.0.0.1 - - [20/Aug/2020 16:21:51] "[37mGET /emi/opinfo/CWCQ_N01-3FA-06/3_FCM-ASSMBLE/20200908100000/52129108/¸·¬x­^/ HTTP/1.1[0m" 200 -
